@@ -5,11 +5,13 @@ void KeyValueStore::set(const std::string& key,
     store[key] = value;
 }
 
-std::string KeyValueStore::get(const std::string& key) {
+std::optional<std::string> KeyValueStore::get(
+    const std::string& key) {
+
     auto it = store.find(key);
 
     if (it == store.end()) {
-        return "";
+        return std::nullopt;
     }
 
     return it->second;

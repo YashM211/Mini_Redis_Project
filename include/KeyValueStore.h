@@ -3,6 +3,7 @@
 
 #include <string>
 #include <unordered_map>
+#include <optional>
 
 class KeyValueStore {
 private:
@@ -11,7 +12,7 @@ private:
 public:
     void set(const std::string& key, const std::string& value);
 
-    std::string get(const std::string& key);
+    std::optional<std::string> get(const std::string& key);
 
     bool remove(const std::string& key);
 

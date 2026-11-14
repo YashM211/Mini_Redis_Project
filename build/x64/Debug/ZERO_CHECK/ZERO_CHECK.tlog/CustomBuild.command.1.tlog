@@ -1,0 +1,10 @@
+^C:\USERS\DRAGON-XOR\DESKTOP\LEARNING STUFF\PROJECTS\MINIREDIS\BUILD\CMAKEFILES\CE38854F6FCB73BA8588F88D6587C1F8\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/DRAGON-XOR/Desktop/Learning Stuff/Projects/MiniRedis" "-BC:/Users/DRAGON-XOR/Desktop/Learning Stuff/Projects/MiniRedis/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/DRAGON-XOR/Desktop/Learning Stuff/Projects/MiniRedis/build/MiniRedis.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

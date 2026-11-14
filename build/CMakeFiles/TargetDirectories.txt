@@ -1,0 +1,3 @@
+C:/Users/DRAGON-XOR/Desktop/Learning Stuff/Projects/MiniRedis/build/CMakeFiles/miniredis.dir
+C:/Users/DRAGON-XOR/Desktop/Learning Stuff/Projects/MiniRedis/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/DRAGON-XOR/Desktop/Learning Stuff/Projects/MiniRedis/build/CMakeFiles/ZERO_CHECK.dir

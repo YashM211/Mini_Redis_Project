@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I"/mnt/c/Users/DRAGON-XOR/Desktop/Learning Stuff/Projects/MiniRedis/include"
 
 CXX_FLAGS = -std=gnu++17
 

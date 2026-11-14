@@ -14,6 +14,7 @@ add_executable(miniredis
 # TCP Server
 add_executable(miniredis_server
     src/Server.cpp
+    src/KeyValueStore.cpp
 )
 
 # TCP Client
@@ -21,4 +22,6 @@ add_executable(miniredis_client
     src/Client.cpp
 )
 
+# Include directories
 target_include_directories(miniredis PRIVATE include)
+target_include_directories(miniredis_server PRIVATE include)

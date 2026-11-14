@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/miniredis_server.dir/src/KeyValueStore.cpp.o"
+  "CMakeFiles/miniredis_server.dir/src/KeyValueStore.cpp.o.d"
   "CMakeFiles/miniredis_server.dir/src/Server.cpp.o"
   "CMakeFiles/miniredis_server.dir/src/Server.cpp.o.d"
   "miniredis_server"

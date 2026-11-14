@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/miniredis_server.dir/src/Server.cpp.o -o miniredis_server 
+/usr/bin/c++ CMakeFiles/miniredis_server.dir/src/Server.cpp.o CMakeFiles/miniredis_server.dir/src/KeyValueStore.cpp.o -o miniredis_server 

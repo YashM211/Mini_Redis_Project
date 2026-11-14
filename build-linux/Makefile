@@ -185,6 +185,7 @@ src/KeyValueStore.o: src/KeyValueStore.cpp.o
 # target to build an object file
 src/KeyValueStore.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniredis.dir/build.make CMakeFiles/miniredis.dir/src/KeyValueStore.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniredis_server.dir/build.make CMakeFiles/miniredis_server.dir/src/KeyValueStore.cpp.o
 .PHONY : src/KeyValueStore.cpp.o
 
 src/KeyValueStore.i: src/KeyValueStore.cpp.i
@@ -193,6 +194,7 @@ src/KeyValueStore.i: src/KeyValueStore.cpp.i
 # target to preprocess a source file
 src/KeyValueStore.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniredis.dir/build.make CMakeFiles/miniredis.dir/src/KeyValueStore.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniredis_server.dir/build.make CMakeFiles/miniredis_server.dir/src/KeyValueStore.cpp.i
 .PHONY : src/KeyValueStore.cpp.i
 
 src/KeyValueStore.s: src/KeyValueStore.cpp.s
@@ -201,6 +203,7 @@ src/KeyValueStore.s: src/KeyValueStore.cpp.s
 # target to generate assembly for a file
 src/KeyValueStore.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniredis.dir/build.make CMakeFiles/miniredis.dir/src/KeyValueStore.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/miniredis_server.dir/build.make CMakeFiles/miniredis_server.dir/src/KeyValueStore.cpp.s
 .PHONY : src/KeyValueStore.cpp.s
 
 src/Server.o: src/Server.cpp.o

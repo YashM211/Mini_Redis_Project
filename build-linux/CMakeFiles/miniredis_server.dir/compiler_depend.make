@@ -71,7 +71,6 @@ CMakeFiles/miniredis_server.dir/src/Server.cpp.o: /mnt/c/Users/DRAGON-XOR/Deskto
   /usr/include/c++/13/cstddef \
   /usr/include/c++/13/cstdio \
   /usr/include/c++/13/cstdlib \
-  /usr/include/c++/13/cstring \
   /usr/include/c++/13/cwchar \
   /usr/include/c++/13/cwctype \
   /usr/include/c++/13/debug/assertions.h \
@@ -114,8 +113,6 @@ CMakeFiles/miniredis_server.dir/src/Server.cpp.o: /mnt/c/Users/DRAGON-XOR/Deskto
   /usr/include/stdc-predef.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
   /usr/include/time.h \
   /usr/include/unistd.h \
   /usr/include/wchar.h \
@@ -290,6 +287,8 @@ CMakeFiles/miniredis_server.dir/src/Server.cpp.o: /mnt/c/Users/DRAGON-XOR/Deskto
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
@@ -324,12 +323,6 @@ CMakeFiles/miniredis_server.dir/src/Server.cpp.o: /mnt/c/Users/DRAGON-XOR/Deskto
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
-
 /usr/include/c++/13/bits/stl_construct.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
@@ -341,6 +334,8 @@ CMakeFiles/miniredis_server.dir/src/Server.cpp.o: /mnt/c/Users/DRAGON-XOR/Deskto
 /usr/include/c++/13/stdexcept:
 
 /usr/include/c++/13/bits/ostream_insert.h:
+
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
 /usr/include/x86_64-linux-gnu/bits/environments.h:
 
@@ -544,8 +539,6 @@ CMakeFiles/miniredis_server.dir/src/Server.cpp.o: /mnt/c/Users/DRAGON-XOR/Deskto
 
 /usr/include/c++/13/cstdlib:
 
-/usr/include/c++/13/cstring:
-
 /usr/include/c++/13/debug/assertions.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
@@ -577,12 +570,6 @@ CMakeFiles/miniredis_server.dir/src/Server.cpp.o: /mnt/c/Users/DRAGON-XOR/Deskto
 /usr/include/c++/13/ext/alloc_traits.h:
 
 /usr/include/c++/13/new:
-
-/usr/include/x86_64-linux-gnu/bits/confname.h:
-
-/usr/include/c++/13/bits/streambuf_iterator.h:
-
-/usr/include/c++/13/ostream:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
@@ -622,23 +609,17 @@ CMakeFiles/miniredis_server.dir/src/Server.cpp.o: /mnt/c/Users/DRAGON-XOR/Deskto
 
 /usr/include/stdlib.h:
 
-/usr/include/string.h:
+/usr/include/x86_64-linux-gnu/sys/select.h:
 
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
-/usr/include/strings.h:
+/usr/include/unistd.h:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
 /usr/include/c++/13/exception:
 
 /usr/include/wctype.h:
-
-/usr/include/x86_64-linux-gnu/sys/select.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
-/usr/include/unistd.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
@@ -653,3 +634,13 @@ CMakeFiles/miniredis_server.dir/src/Server.cpp.o: /mnt/c/Users/DRAGON-XOR/Deskto
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/c++/13/bits/streambuf_iterator.h:
+
+/usr/include/c++/13/ostream:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:

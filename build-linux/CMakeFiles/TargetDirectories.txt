@@ -1,0 +1,5 @@
+/mnt/c/Users/DRAGON-XOR/Desktop/Learning Stuff/Projects/MiniRedis/build-linux/CMakeFiles/miniredis.dir
+/mnt/c/Users/DRAGON-XOR/Desktop/Learning Stuff/Projects/MiniRedis/build-linux/CMakeFiles/miniredis_server.dir
+/mnt/c/Users/DRAGON-XOR/Desktop/Learning Stuff/Projects/MiniRedis/build-linux/CMakeFiles/miniredis_client.dir
+/mnt/c/Users/DRAGON-XOR/Desktop/Learning Stuff/Projects/MiniRedis/build-linux/CMakeFiles/edit_cache.dir
+/mnt/c/Users/DRAGON-XOR/Desktop/Learning Stuff/Projects/MiniRedis/build-linux/CMakeFiles/rebuild_cache.dir

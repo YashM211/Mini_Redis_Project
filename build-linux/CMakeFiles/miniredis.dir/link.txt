@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/miniredis.dir/src/main.cpp.o CMakeFiles/miniredis.dir/src/KeyValueStore.cpp.o -o miniredis 

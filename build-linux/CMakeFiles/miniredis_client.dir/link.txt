@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/miniredis_client.dir/src/Client.cpp.o -o miniredis_client 

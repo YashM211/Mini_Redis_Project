@@ -1,21 +1,32 @@
 #include <iostream>
+#include <thread>
 #include "KeyValueStore.h"
 
 int main() {
 
     KeyValueStore db(3);
 
-    db.set("A", "10");
-    db.set("B", "20");
-    db.set("C", "30");
+    // Normal key
+    db.set("name", "Yash");
 
-    std::cout << "A: " << *db.get("A") << '\n';
+    // Key expires after 3 seconds
+    db.set("session", "active", std::chrono::seconds(3));
 
-    db.set("D", "40");
+    std::cout << "Name: " << *db.get("name") << '\n';
 
-    std::cout << "B exists: " << db.exists("B") << '\n';
-    std::cout << "C exists: " << db.exists("C") << '\n';
-    std::cout << "D exists: " << db.exists("D") << '\n';
+    std::cout << "Session exists: "
+              << db.exists("session") << '\n';
+
+    std::cout << "\nWaiting for 4 seconds...\n";
+
+    std::this_thread::sleep_for(std::chrono::seconds(4));
+
+    std::cout << "Session exists after expiration: "
+              << db.exists("session") << '\n';
+
+    std::cout << "Session value: "
+              << (db.get("session").value_or("Key expired"))
+              << '\n';
 
     return 0;
 }

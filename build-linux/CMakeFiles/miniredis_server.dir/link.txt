@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/miniredis_server.dir/src/Server.cpp.o -o miniredis_server 

@@ -2,20 +2,20 @@
 #include "KeyValueStore.h"
 
 int main() {
-    KeyValueStore db;
 
-    db.set("name", "Yash");
-    db.set("language", "C++");
+    KeyValueStore db(3);
 
-    std::cout << "Name: " << db.get("name") << '\n';
-    std::cout << "Language: " << db.get("language") << '\n';
+    db.set("A", "10");
+    db.set("B", "20");
+    db.set("C", "30");
 
-    std::cout << "Exists: " << db.exists("name") << '\n';
+    std::cout << "A: " << *db.get("A") << '\n';
 
-    db.remove("name");
+    db.set("D", "40");
 
-    std::cout << "Exists after deletion: "
-              << db.exists("name") << '\n';
+    std::cout << "B exists: " << db.exists("B") << '\n';
+    std::cout << "C exists: " << db.exists("C") << '\n';
+    std::cout << "D exists: " << db.exists("D") << '\n';
 
     return 0;
 }

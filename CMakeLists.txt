@@ -25,3 +25,10 @@ add_executable(miniredis_client
 # Include directories
 target_include_directories(miniredis PRIVATE include)
 target_include_directories(miniredis_server PRIVATE include)
+
+find_package(Threads REQUIRED)
+
+target_link_libraries(
+    miniredis_server
+    PRIVATE Threads::Threads
+)

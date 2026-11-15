@@ -171,4 +171,6 @@ CMakeFiles/miniredis.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/optional \
  /usr/include/c++/13/list /usr/include/c++/13/bits/stl_list.h \
  /usr/include/c++/13/bits/allocated_ptr.h \
- /usr/include/c++/13/bits/list.tcc /usr/include/c++/13/chrono
+ /usr/include/c++/13/bits/list.tcc /usr/include/c++/13/chrono \
+ /usr/include/c++/13/mutex /usr/include/c++/13/bits/std_mutex.h \
+ /usr/include/c++/13/bits/unique_lock.h

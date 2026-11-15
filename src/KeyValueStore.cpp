@@ -36,6 +36,8 @@ void KeyValueStore::set(
     std::optional<std::chrono::seconds> ttl
 ) {
 
+    std::lock_guard<std::mutex> lock(mtx);
+
     // Remove the key if it has already expired
     expireIfNeeded(key);
 
@@ -83,6 +85,8 @@ std::optional<std::string> KeyValueStore::get(
     const std::string& key
 ) {
 
+    std::lock_guard<std::mutex> lock(mtx);
+
     if (expireIfNeeded(key)) {
         return std::nullopt;
     }
@@ -105,6 +109,7 @@ std::optional<std::string> KeyValueStore::get(
 
 void KeyValueStore::evict() {
 
+
     if (cache.empty()) {
         return;
     }
@@ -120,6 +125,8 @@ void KeyValueStore::evict() {
 
 
 bool KeyValueStore::remove(const std::string& key) {
+
+    std::lock_guard<std::mutex> lock(mtx);
 
     auto it = index.find(key);
 
@@ -139,6 +146,8 @@ bool KeyValueStore::remove(const std::string& key) {
 
 
 bool KeyValueStore::exists(const std::string& key) {
+
+    std::lock_guard<std::mutex> lock(mtx);
 
     if (expireIfNeeded(key)) {
         return false;

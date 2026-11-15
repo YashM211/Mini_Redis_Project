@@ -8,6 +8,7 @@
 #include <unistd.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
+#include <thread>
 
 #include "KeyValueStore.h"
 
@@ -274,9 +275,15 @@ int main() {
 
         std::cout << "Client connected\n";
 
-        handleClient(client_fd);
+        std::thread clientThread([client_fd]() {
 
-        close(client_fd);
+            handleClient(client_fd);
+
+            close(client_fd);
+
+        });
+
+        clientThread.detach();
     }
 
     close(server_fd);

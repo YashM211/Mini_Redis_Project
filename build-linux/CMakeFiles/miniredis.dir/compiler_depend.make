@@ -48,6 +48,7 @@ CMakeFiles/miniredis.dir/src/KeyValueStore.cpp.o: /mnt/c/Users/DRAGON-XOR/Deskto
   /usr/include/c++/13/bits/refwrap.h \
   /usr/include/c++/13/bits/requires_hosted.h \
   /usr/include/c++/13/bits/std_abs.h \
+  /usr/include/c++/13/bits/std_mutex.h \
   /usr/include/c++/13/bits/stl_algobase.h \
   /usr/include/c++/13/bits/stl_construct.h \
   /usr/include/c++/13/bits/stl_function.h \
@@ -58,6 +59,7 @@ CMakeFiles/miniredis.dir/src/KeyValueStore.cpp.o: /mnt/c/Users/DRAGON-XOR/Deskto
   /usr/include/c++/13/bits/stl_pair.h \
   /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
+  /usr/include/c++/13/bits/unique_lock.h \
   /usr/include/c++/13/bits/unordered_map.h \
   /usr/include/c++/13/bits/uses_allocator.h \
   /usr/include/c++/13/bits/uses_allocator_args.h \
@@ -77,6 +79,7 @@ CMakeFiles/miniredis.dir/src/KeyValueStore.cpp.o: /mnt/c/Users/DRAGON-XOR/Deskto
   /usr/include/c++/13/exception \
   /usr/include/c++/13/ext/aligned_buffer.h \
   /usr/include/c++/13/ext/alloc_traits.h \
+  /usr/include/c++/13/ext/atomicity.h \
   /usr/include/c++/13/ext/numeric_traits.h \
   /usr/include/c++/13/ext/string_conversions.h \
   /usr/include/c++/13/ext/type_traits.h \
@@ -84,6 +87,7 @@ CMakeFiles/miniredis.dir/src/KeyValueStore.cpp.o: /mnt/c/Users/DRAGON-XOR/Deskto
   /usr/include/c++/13/iosfwd \
   /usr/include/c++/13/limits \
   /usr/include/c++/13/list \
+  /usr/include/c++/13/mutex \
   /usr/include/c++/13/new \
   /usr/include/c++/13/optional \
   /usr/include/c++/13/pstl/pstl_config.h \
@@ -101,6 +105,8 @@ CMakeFiles/miniredis.dir/src/KeyValueStore.cpp.o: /mnt/c/Users/DRAGON-XOR/Deskto
   /usr/include/features.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdint.h \
   /usr/include/stdio.h \
@@ -110,6 +116,7 @@ CMakeFiles/miniredis.dir/src/KeyValueStore.cpp.o: /mnt/c/Users/DRAGON-XOR/Deskto
   /usr/include/x86_64-linux-gnu/asm/errno.h \
   /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
   /usr/include/x86_64-linux-gnu/bits/endian.h \
   /usr/include/x86_64-linux-gnu/bits/endianness.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -118,9 +125,12 @@ CMakeFiles/miniredis.dir/src/KeyValueStore.cpp.o: /mnt/c/Users/DRAGON-XOR/Deskto
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/x86_64-linux-gnu/bits/locale.h \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
@@ -149,7 +159,9 @@ CMakeFiles/miniredis.dir/src/KeyValueStore.cpp.o: /mnt/c/Users/DRAGON-XOR/Deskto
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
@@ -162,15 +174,20 @@ CMakeFiles/miniredis.dir/src/KeyValueStore.cpp.o: /mnt/c/Users/DRAGON-XOR/Deskto
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
@@ -232,6 +249,7 @@ CMakeFiles/miniredis.dir/src/main.cpp.o: /mnt/c/Users/DRAGON-XOR/Desktop/Learnin
   /usr/include/c++/13/bits/refwrap.h \
   /usr/include/c++/13/bits/requires_hosted.h \
   /usr/include/c++/13/bits/std_abs.h \
+  /usr/include/c++/13/bits/std_mutex.h \
   /usr/include/c++/13/bits/std_thread.h \
   /usr/include/c++/13/bits/stl_algobase.h \
   /usr/include/c++/13/bits/stl_construct.h \
@@ -246,6 +264,7 @@ CMakeFiles/miniredis.dir/src/main.cpp.o: /mnt/c/Users/DRAGON-XOR/Desktop/Learnin
   /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
   /usr/include/c++/13/bits/this_thread_sleep.h \
+  /usr/include/c++/13/bits/unique_lock.h \
   /usr/include/c++/13/bits/unique_ptr.h \
   /usr/include/c++/13/bits/unordered_map.h \
   /usr/include/c++/13/bits/uses_allocator.h \
@@ -278,6 +297,7 @@ CMakeFiles/miniredis.dir/src/main.cpp.o: /mnt/c/Users/DRAGON-XOR/Desktop/Learnin
   /usr/include/c++/13/istream \
   /usr/include/c++/13/limits \
   /usr/include/c++/13/list \
+  /usr/include/c++/13/mutex \
   /usr/include/c++/13/new \
   /usr/include/c++/13/optional \
   /usr/include/c++/13/ostream \
@@ -393,27 +413,9 @@ CMakeFiles/miniredis.dir/src/main.cpp.o: /mnt/c/Users/DRAGON-XOR/Desktop/Learnin
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
-
 /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/x86_64-linux-gnu/bits/sched.h:
-
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
-
-/usr/include/sched.h:
-
-/usr/include/pthread.h:
 
 /usr/include/c++/13/thread:
 
@@ -439,10 +441,6 @@ CMakeFiles/miniredis.dir/src/main.cpp.o: /mnt/c/Users/DRAGON-XOR/Desktop/Learnin
 
 /usr/include/c++/13/bits/locale_classes.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h:
-
-/usr/include/c++/13/bits/basic_ios.tcc:
-
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
@@ -453,9 +451,19 @@ CMakeFiles/miniredis.dir/src/main.cpp.o: /mnt/c/Users/DRAGON-XOR/Desktop/Learnin
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
+/usr/include/c++/13/bits/basic_ios.tcc:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
+
 /usr/include/c++/13/bits/ios_base.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
@@ -470,6 +478,10 @@ CMakeFiles/miniredis.dir/src/main.cpp.o: /mnt/c/Users/DRAGON-XOR/Desktop/Learnin
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
@@ -489,10 +501,6 @@ CMakeFiles/miniredis.dir/src/main.cpp.o: /mnt/c/Users/DRAGON-XOR/Desktop/Learnin
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
@@ -505,6 +513,26 @@ CMakeFiles/miniredis.dir/src/main.cpp.o: /mnt/c/Users/DRAGON-XOR/Desktop/Learnin
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/x86_64-linux-gnu/sys/select.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
 /usr/include/c++/13/bits/string_view.tcc:
 
 /usr/include/c++/13/bits/locale_facets.tcc:
@@ -515,9 +543,7 @@ CMakeFiles/miniredis.dir/src/main.cpp.o: /mnt/c/Users/DRAGON-XOR/Desktop/Learnin
 
 /usr/include/c++/13/bits/stl_construct.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
-/usr/include/c++/13/bits/refwrap.h:
+/usr/include/c++/13/bits/std_mutex.h:
 
 /usr/include/c++/13/system_error:
 
@@ -527,23 +553,17 @@ CMakeFiles/miniredis.dir/src/main.cpp.o: /mnt/c/Users/DRAGON-XOR/Desktop/Learnin
 
 /usr/include/c++/13/debug/debug.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h:
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn.h:
-
-/usr/include/c++/13/bits/std_abs.h:
-
-/usr/include/c++/13/bits/uses_allocator.h:
-
-/usr/include/c++/13/bits/postypes.h:
+/usr/include/c++/13/bits/refwrap.h:
 
 /usr/include/c++/13/bits/stl_algobase.h:
 
 /usr/include/c++/13/bits/node_handle.h:
 
 /usr/include/c++/13/bits/parse_numbers.h:
+
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
 /usr/include/c++/13/bits/invoke.h:
 
@@ -566,8 +586,6 @@ CMakeFiles/miniredis.dir/src/main.cpp.o: /mnt/c/Users/DRAGON-XOR/Desktop/Learnin
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
 /usr/include/c++/13/type_traits:
-
-/usr/include/c++/13/bits/unordered_map.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
@@ -639,6 +657,12 @@ CMakeFiles/miniredis.dir/src/main.cpp.o: /mnt/c/Users/DRAGON-XOR/Desktop/Learnin
 
 /mnt/c/Users/DRAGON-XOR/Desktop/Learning\ Stuff/Projects/MiniRedis/src/KeyValueStore.cpp:
 
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
+/usr/include/c++/13/bits/cpp_type_traits.h:
+
 /usr/include/c++/13/bits/chrono.h:
 
 /usr/include/c++/13/bits/functexcept.h:
@@ -648,8 +672,6 @@ CMakeFiles/miniredis.dir/src/main.cpp.o: /mnt/c/Users/DRAGON-XOR/Desktop/Learnin
 /usr/include/c++/13/bits/stl_iterator.h:
 
 /usr/include/c++/13/string:
-
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
 /usr/include/c++/13/bits/cxxabi_forced.h:
 
@@ -675,13 +697,23 @@ CMakeFiles/miniredis.dir/src/main.cpp.o: /mnt/c/Users/DRAGON-XOR/Desktop/Learnin
 
 /usr/include/c++/13/ext/alloc_traits.h:
 
+/usr/include/c++/13/bits/unordered_map.h:
+
+/usr/include/c++/13/bits/std_abs.h:
+
+/usr/include/c++/13/bits/postypes.h:
+
+/usr/include/c++/13/bits/uses_allocator.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn.h:
+
 /usr/include/c++/13/bits/stl_function.h:
 
 /usr/include/c++/13/bits/utility.h:
-
-/usr/include/c++/13/ext/atomicity.h:
-
-/usr/include/c++/13/cctype:
 
 /usr/include/c++/13/chrono:
 
@@ -709,6 +741,10 @@ CMakeFiles/miniredis.dir/src/main.cpp.o: /mnt/c/Users/DRAGON-XOR/Desktop/Learnin
 
 /usr/include/errno.h:
 
+/usr/include/c++/13/cctype:
+
+/usr/include/c++/13/ext/atomicity.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
 /usr/include/c++/13/ext/numeric_traits.h:
@@ -727,9 +763,15 @@ CMakeFiles/miniredis.dir/src/main.cpp.o: /mnt/c/Users/DRAGON-XOR/Desktop/Learnin
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+/usr/include/c++/13/bits/unique_lock.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+/usr/include/c++/13/mutex:
+
+/usr/include/c++/13/cwctype:
+
+/usr/include/c++/13/ratio:
+
+/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
 /usr/include/c++/13/bits/istream.tcc:
 
@@ -741,12 +783,6 @@ CMakeFiles/miniredis.dir/src/main.cpp.o: /mnt/c/Users/DRAGON-XOR/Desktop/Learnin
 
 /usr/include/c++/13/pstl/pstl_config.h:
 
-/usr/include/c++/13/cwctype:
-
-/usr/include/c++/13/ratio:
-
-/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
-
 /usr/include/c++/13/bits/cxxabi_init_exception.h:
 
 /usr/include/c++/13/typeinfo:
@@ -754,8 +790,6 @@ CMakeFiles/miniredis.dir/src/main.cpp.o: /mnt/c/Users/DRAGON-XOR/Desktop/Learnin
 /usr/include/c++/13/unordered_map:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
 
 /usr/include/ctype.h:
 
@@ -776,6 +810,10 @@ CMakeFiles/miniredis.dir/src/main.cpp.o: /mnt/c/Users/DRAGON-XOR/Desktop/Learnin
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
 /usr/include/locale.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sched.h:
 
 /usr/include/stdint.h:
 
@@ -812,15 +850,3 @@ CMakeFiles/miniredis.dir/src/main.cpp.o: /mnt/c/Users/DRAGON-XOR/Desktop/Learnin
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
-/usr/include/c++/13/bits/cpp_type_traits.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/usr/include/x86_64-linux-gnu/sys/select.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:

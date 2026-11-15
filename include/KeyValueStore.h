@@ -6,6 +6,7 @@
 #include <optional>
 #include <list>
 #include <chrono>
+#include <mutex>
 
 class KeyValueStore {
 
@@ -27,6 +28,9 @@ private:
 
     std::unordered_map<std::string, TimePoint> expiry;
 
+    // Protect shared database resources
+    mutable std::mutex mtx;
+
     void evict();
 
     bool expireIfNeeded(const std::string& key);
@@ -46,7 +50,6 @@ public:
     bool remove(const std::string& key);
 
     bool exists(const std::string& key);
-
 };
 
 #endif
